@@ -1,0 +1,88 @@
+\documentclass[%
+a4paper,
+%twoside,
+11pt
+]{article}
+
+% encoding, font, language
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[french]{babel}
+
+\usepackage{nicefrac}
+
+\usepackage[
+    %handwritten,
+    nowarnings,
+    %myconfig
+]
+{xcookybooky}
+
+\DeclareRobustCommand{\textcelcius}{\ensuremath{^{\circ}\mathrm{C}}}
+
+
+\setcounter{secnumdepth}{1}
+\renewcommand*{\recipesection}[2][]
+{%
+    \subsection[#1]{#2}
+}
+\renewcommand{\subsectionmark}[1]
+{% no implementation to display the section name instead
+}
+
+
+\usepackage{hyperref}    % must be the last package
+\hypersetup{%
+    pdfauthor            = {Ben Viala},
+    pdftitle             = {Le CookBook},
+    pdfsubject           = {Recettes},
+    pdfkeywords          = {recettes, lecookbook, livre de cuisine, cuisine, cookbook},
+    pdfstartview         = {FitV},
+    pdfview              = {FitH},
+    pdfpagemode          = {UseNone}, % Options; UseNone, UseOutlines
+    bookmarksopen        = {true},
+    pdfpagetransition    = {Glitter},
+    colorlinks           = {true},
+    linkcolor            = {black},
+    urlcolor             = {blue},
+    citecolor            = {black},
+    filecolor            = {black},
+}
+
+\hbadness=10000	% Ignore underfull boxes
+
+\begin{document}
+
+\title{Examples for using \textbf{xcookybooky}}
+\title{Le CookBook}
+\author{Ben Viala\\ \href{mailto:ben@viala.tech}{ben@viala.tech}}
+\maketitle
+
+\begin{abstract}
+	Cet ouvrage est mon livre de cuisine. Sobrement intitulé "LE" CookBook, c'est un recueil de mes recettes favorites, ou signatures. Je le partage en espérant qu'il inspirera quelques gourmands, ou motivera des néo-cuisiniers à se lancer.
+
+	Etant français originaire du Sud-Ouest, il regroupe majoritairement des recettes d'origine française ou européenne. La plupart ne conviennent pas à une alimentation végane, ou sans-alcool. 
+
+	Le CookBook a été écrit en langage \texttt{LaTeX}. La génération du CookBook nécessite au
+moins la version~1.4 du paquet \texttt{xcookybooky}\footnote{\url{http://www.ctan.org/pkg/xcookybooky}}. Plus d'informations sur la page \texttt{github}\footnote{\url{https://github.com/bennychoubros/LeCookBook}} du projet. 
+\end{abstract}
+
+\tableofcontents
+
+\vspace{5em}
+
+\section{Recettes}
+L'intégralité des recettes suivantes a été collecté au fil des années. Recettes traditionnelles,
+familiales, trouvées sur internet ou bien obtenues par bouche à oreilles, elles sont d'origine
+diverses. Cependant elles ont toutes été cuisinées (et goûtées !) par mes soins.
+J'ai essayé de retracer les auteurs quand c'était possible.
+
+% background graphic
+% Ajout d'une photo en fond si nécessaire
+%\setBackgroundPicture[x, y=-2cm, width=\paperwidth-4cm, height, orientation = pagecenter]
+%{img/background.jpg}
+
+\include{recettes/Tourte_Pommes_de_Terre.tex}
+
+\end{document} 
