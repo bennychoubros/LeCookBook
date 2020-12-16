@@ -5,22 +5,32 @@ a4paper,
 ]{article}
 
 % encoding, font, language
-\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage[french]{babel}
+% Usage de police Times 
+\renewcommand{\rmdefault}{ptm}
 
 \usepackage{nicefrac}
 
-\usepackage[
-    %handwritten,
-    nowarnings,
-    %myconfig
-]
-{xcookybooky}
+\usepackage[nowarnings]{xcookybooky}
+
+\IfLanguagePatterns{french}
+{% French : needed due to incompatibility latin1 of xcookybooky and utf8 needed
+    \setHeadlines
+    {% translation
+        inghead = Ingrédients,
+        prephead = Préparation,
+        hinthead = Cooky les bons tuyaux,
+        continuationhead = Suite,
+        continuationfoot = Suite page suivante,
+        portionvalue = Portions,
+        calory = Valeur calorifique,
+    }
+}{}
 
 \DeclareRobustCommand{\textcelcius}{\ensuremath{^{\circ}\mathrm{C}}}
-
 
 \setcounter{secnumdepth}{1}
 \renewcommand*{\recipesection}[2][]
@@ -83,6 +93,5 @@ J'ai essayé de retracer les auteurs quand c'était possible.
 %\setBackgroundPicture[x, y=-2cm, width=\paperwidth-4cm, height, orientation = pagecenter]
 %{img/background.jpg}
 
-\include{recettes/Tourte_Pommes_de_Terre.tex}
-
+%\include{recettes/TestOptions}
 \end{document} 
