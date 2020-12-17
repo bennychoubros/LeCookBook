@@ -25,6 +25,7 @@ $(CB): $(SRCS)
 
 clean:
 	rm -f *.aux *.log *.out *.toc
+	rm -f recettes/*.aux
 
 fclean: clean
 	rm -f $(CB)
