@@ -13,7 +13,7 @@ Tapez la commande suivante dans votre terminal, et consultez les recettes :
 
 ## Dépendances
 LeCookBook est écrit en langage LaTeX. 
-La génération du CookBook nécessite au moins la version~1.4 du [paquet xcookybooky.] (http://www.ctan.org/pkg/xcookybooky)
+La génération du CookBook nécessite au moins la version~1.4 du [paquet xcookybooky.] (http://www.ctan.org/pkg/xcookybooky/)
 Le chargement des  polices propriétaires Emerald Font n'est pas nécessaire.
 
 ## Install
@@ -22,29 +22,29 @@ Le chargement des  polices propriétaires Emerald Font n'est pas nécessaire.
 
 ## Usage
 
-Pour compiler, entrer la commande suivante :
+Pour compiler, entrer la commande suivante :  
 `make`
 
-Afin d'avoir la Table des matières à jour, il est nécessaire de lancer deux fois make :
+Afin d'avoir la Table des matières à jour, il est nécessaire de lancer deux fois make :  
 `make & make`
 
 ### Ajouter une nouvelle recette
 
-Dans un terminal, éxecuter le script nouvelle_recette.sh :
+Dans un terminal, éxecuter le script nouvelle\_recette.sh :  
 `sh nouvelle_recette.sh`
 
-Ou
+Ou :  
 `./nouvelle_recette.sh Ma nouvelle recette`
 
-Cela va générer un nouveau fichier template Ma_nouvelle_recette.tex dans le dossier recettes.
+Cela va générer un nouveau fichier template Ma\_nouvelle\_recette.tex dans le dossier recettes.  
 Compléter les différents items comme souhaités, en commentant/décommentant les parties qui vous
 intéressent.
 
 Une fois fait, ajouter  votre nouvelle recette dans la Table des matières dans le
-fichier cookbook.tex :s
-![Screenshot][/img/readme/cookbook_new_recipe.png]
+fichier cookbook.tex :  
+![Screenshot](/img/readme/cookbook_new_recipe.png)
 
-Et générer à nouveau votre cookbook :
+Et générer à nouveau votre cookbook :  
 `make fclean && make && make && open LeCookBook.pdf`
 
 ## Contributions
