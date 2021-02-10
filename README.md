@@ -2,18 +2,18 @@
 Mon CookBook personnel
 
 ## Introduction
-LeCookBook est mon livre de cuisine. C'est un recueil de mes recettes favorites, ou signatures. Je le partage en espérant qu'il inspirera quelques gourmands, ou motivera des néo-cuisiniers à se lancer.
-
+LeCookBook est mon livre de cuisine. C'est un recueil de mes recettes favorites, ou signatures. Je le partage en espérant qu'il inspirera quelques gourmands, ou motivera des néo-cuisiniers à se lancer.  
+  
 Etant français originaire du Sud-Ouest, il regroupe majoritairement des recettes d'origine française ou européenne. La plupart ne conviennent pas à une alimentation végane, ou sans-alcool.
 
 ## Démarrage rapide
 
-Tapez la commande suivante dans votre terminal, et consultez les recettes :
+Tapez la commande suivante dans votre terminal, et consultez les recettes :  
 `make && make && make clean && open LeCookBook.pdf`
 
 ## Dépendances
-LeCookBook est écrit en langage LaTeX. 
-La génération du CookBook nécessite au moins la version~1.4 du [paquet xcookybooky.] (http://www.ctan.org/pkg/xcookybooky/)
+LeCookBook est écrit en langage LaTeX.   
+La génération du CookBook nécessite au moins la version~1.4 du [paquet xcookybooky](http://www.ctan.org/pkg/xcookybooky/)  
 Le chargement des  polices propriétaires Emerald Font n'est pas nécessaire.
 
 ## Install
@@ -48,5 +48,5 @@ Et générer à nouveau votre cookbook :
 `make fclean && make && make && open LeCookBook.pdf`
 
 ## Contributions
-Contributeurs bienvenus : N'hésitez pas à ajouter vos nouvelles recettes.
+Contributeurs bienvenus : N'hésitez pas à ajouter vos nouvelles recettes.  
 Je me réserve toutefois le droit de ne pas modifier certaines recettes, qui correspondent plus à mes goûts ou à la version qui été préparée dans ma famille.
